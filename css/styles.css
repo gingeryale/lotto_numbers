@@ -1,0 +1,107 @@
+@font-face {
+	font-family: "atkinson";
+	src: url("./WOFF2/Atkinson-Hyperlegible-Regular-102a.woff2") format("woff");
+}
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+:root {
+	--padding: 1rem;
+}
+* {
+	box-sizing: border-box;
+}
+html {
+	font-size: 18px;
+}
+body {
+	font-family: "atkinson", serif;
+	background: url(https://images.squarespace-cdn.com/content/v1/5bfc47ec4cde7a5d18b3b843/1544510927197-NFF7ZGNSWA1WJMQSX35T/ke17ZwdGBToddI8pDm48kHpUgBPuWwl9HV2XbOk3ppB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UTy6mwIL2kpeBw8wzd_oqj9JK0jEq21tFGgqSs_kL8Tp5smqE3Jht310HkeGKR4VRw/stage-background.jpg?format=1500w)
+		no-repeat;
+	background-size: cover;
+	color: white;
+	background-color: rgb(53, 2, 2);
+}
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	outline: 10px solid black;
+	padding: 0 var(--padding);
+	font-size: 1rem;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-shadow: 2px 1px 3px black;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	max-width: 88%;
+	height: 60vh;
+	outline: 1px dashed white;
+}
+
+h2,
+h1 {
+	padding: var(--padding);
+	text-align: center;
+	font-size: 2rem;
+}
+h1 span {
+	font-family: "Caveat", cursive;
+}
+h2 span {
+	font-family: "Caveat", cursive;
+	font-size: 2rem;
+}
+
+.counter {
+	font-size: 3.5rem;
+}
+.controls {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.btn {
+	margin: 0 calc(var(--padding) / 4);
+	text-shadow: none;
+	border-radius: calc(var(--padding) / 4);
+	line-height: 2;
+	width: 100%;
+	max-width: 6rem;
+	color: white;
+}
+
+.btn:disabled {
+	opacity: 0.5;
+}
+
+.start {
+	background-color: #e00707;
+	border: 2px solid #521e00;
+}
+.stop {
+	background-color: rgb(250, 125, 7);
+	border: 2px solid #f50519;
+}
+.play {
+	background-color: #07aafa;
+	border: 2px solid #000f96;
+}
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0;
+}
+li {
+	list-style-type: none;
+	padding: 0 var(--padding);
+	font-size: 2rem;
+	margin: calc(var(--padding) / 2);
+	border: 2px dashed white;
+	line-height: 2;
+}
